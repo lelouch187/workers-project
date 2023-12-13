@@ -2,11 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Worker;
 use Illuminate\Http\Request;
 
 class WorkerController extends Controller
 {
     public function index(){
-        return ' this is index action';
+        $workers = Worker::paginate(2);
+        return view('workers.index', compact('workers'));
     }
 }
