@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -11,3 +11,8 @@
     @yield('content')
 </body>
 </html>
+<style>
+    .nav svg{
+        width: 30px;
+    }
+</style>

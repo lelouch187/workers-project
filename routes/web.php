@@ -19,3 +19,6 @@ Route::get('/', function () {
 
 Route::get('/workers', [\App\Http\Controllers\WorkerController::class, 'index'])->name('workers.index');
 
+Route::get('/workers/create', [\App\Http\Controllers\WorkerController::class, 'create'])->name('workers.create');
+
+Route::post('/workers', [\App\Http\Controllers\WorkerController::class, 'store'])->name('workers.store');

@@ -1,7 +1,7 @@
 @extends('layouts.main')
 @section('content')
 <div>
-    <a href="#">Добавить</a>
+    <a href="{{route('workers.create')}}">Добавить</a>
 </div>
     @if(isset($workers))
         @foreach($workers as $worker)
@@ -15,6 +15,6 @@
             </div>
             <br>
         @endforeach
-        {{$workers->links()}}
+        <div class="nav">{{$workers->links()}}</div>
     @endif
 @endsection
